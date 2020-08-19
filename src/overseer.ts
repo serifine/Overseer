@@ -20,6 +20,14 @@ export class Overseer {
     this.operators = [];
   }
 
+  public get loadedRules() {
+    return [...this.rules];
+  }
+
+  public get loadedOperators() {
+    return [...this.operators];
+  }
+
   /**
    *
    * @param facts Data to run the rules against.
